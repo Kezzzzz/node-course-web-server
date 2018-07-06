@@ -47,6 +47,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project Page',
+    bodyText: 'Projects are displayed in this section!'
+  });
+});
+
 
 app.get('/bad', (req, res) => {
   res.send({
